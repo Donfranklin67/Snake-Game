@@ -46,4 +46,7 @@ class ScoreBoard(Turtle):
         self.hideturtle()
         self.goto(x=0, y=0)
         self.clear()
-        self.write(f"       Game Over !\nYour final score is: {self.score}", False, 'center', ('ariel', 20, 'bold'))
+        if self.score >= self.high_score:
+            self.write(f"       Game Over !\nNew High Score: {self.high_score}", False, 'center', ('ariel', 20, 'bold'))
+        else:
+            self.write(f"       Game Over !\nYour final score is: {self.score}", False, 'center', ('ariel', 20, 'bold'))
