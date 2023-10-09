@@ -17,6 +17,7 @@ class ScoreBoard(Turtle):
     def update_score(self):
         self.clear()
         self.write(f"Score: {self.score}", False, 'center', ('ariel', 20, 'bold'))
+        self.reset()
         self.max_score()
 
     def max_score(self):
@@ -35,9 +36,9 @@ class ScoreBoard(Turtle):
             self.high_score = self.score
             with open('C:/Users/IGWE/OneDrive/Python/Day-20 Snake game/Snake-Game/data.txt', mode='w') as data:
                 data.write(f"{self.high_score}")
-        self.score = 0
-        self.goto(-170, 260)
-        self.update_score()
+        # self.score = 0
+        # self.goto(-170, 260)
+        # self.update_score()
 
     def game_over(self):
         self.color('white')

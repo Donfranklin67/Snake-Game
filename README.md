@@ -17,5 +17,5 @@ snake's head up, down, left, or right, and the body will move in the same way.
 
 #### P.S:
 * Once you collide with tail or playing area, my game stops and displays your score.
-* My high score is 21... 
+* My high score is 33... 
 
